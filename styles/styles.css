@@ -6,8 +6,6 @@ body {
 	font-family: Poppins,sans-serif;
 }
 
-
-
 #footer-contents-container,
 #header-contents-container,
 #snippet-image,
@@ -31,30 +29,14 @@ body {
 	padding: 2em 0;
 }
 
-
-header {
-	/**border: 1px solid red; **/
-}
-
 nav {
-	/**border: 1px solid orange; **/
 	display: none;
 }
 
-ul {
-	/**border: 1px solid brown; **/
-}
-
-li {
-	/**border: 1px solid pink; **/
-}
-
 a {
-	/**border: 1px solid black; **/
 	text-decoration: none;
 	color: grey;
 	margin-right: 1em;
-	/**margin-left: 1em; **/
 }
 
 
@@ -80,11 +62,6 @@ span {
 	color: grey;
 }
 
-div {
-	/**border: 1px solid black; **/
-
-}
-
 img {
 	display: block;
 	max-width: 100%;
@@ -99,7 +76,6 @@ img {
 
 
 svg {
-	/**border: 1px solid grey; **/
 	display: block;
 }
 

@@ -1,0 +1,433 @@
+
+/** all buttons have been given a margin a top and bottom margin of 0.75em at mobile view **/
+/** all svgs have been given a margin right of 0.50em at mobile view **/
+/** use a base class for all containers that need display: flex; and use their modifier classes
+    to give them unique properties as required. **/
+
+/** index page styles start **/
+
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+}
+
+
+ul {
+	padding: 0;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: #000000;
+}
+
+
+.container {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+.site-info-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.site-title {
+	font-size: 1.25rem;
+}
+
+
+#hero-image {
+	order: -1;
+}
+
+
+#site-info-nav-container {
+	background-color: #f9f8f3;
+	padding: 2em 0;
+	margin-bottom: 4em;
+}
+
+.violet-text {
+	color: #4D13D1;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#sign-up-link {
+	color: #fff;
+	font-weight: 900;
+}
+
+
+.container-nav,
+.stars-reviews-container,
+.no-display {
+	display: none;
+}
+
+
+.selling-point-text {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.bold-grey-text {
+	color: #6B7280;
+}
+
+input,
+.light-grey-text {
+	color: #E5E7EB;
+}
+
+
+img,svg {
+	display: block;
+	max-width: 100%;
+}
+
+svg {
+	margin: 0;
+	margin-right: 0.50em;
+
+}
+
+
+button {
+	font-weight: 700;
+	border-radius: 5px;
+	padding: 1em;
+	margin: 0.75em 0;
+	border: 0;
+	width: 100%;
+}
+
+
+.primary-button {
+	background-color: #4D13D1;
+	color: white;
+}
+
+
+.secondary-button {
+	border: 2px solid #f8f8f8;
+	background-color: #fff;
+	color: #4D13D1;
+}
+
+
+.view-examples-text {
+	text-decoration: underline;
+	display: block;
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+
+.checkmark-container {
+	display: flex;
+	align-items: center;
+}
+
+
+.product-features {
+	margin: 3em 0;
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
+
+.secondary-info-container {
+	background-color: #4D13D1;
+	padding: 1.5em 1.5em 0 1.5em;
+	margin: 5em 0;
+	border-radius: 5px;
+}
+
+.secondary-selling-point-text {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.secondary-info-text {
+	color: #fff;
+}
+
+#page-up-image {
+	margin-top: 2.5em;
+}
+
+
+.user-info-container {
+	line-height: 1.5em;
+	border: 2px solid #f8f8f8;
+	border-radius: 5px;
+	padding: 1.5em;
+	margin: 2.5em 0;
+}
+
+
+.primary-user-info {
+	display: flex;
+	align-items: center;	
+}
+
+.username {
+	margin: 0;
+}
+
+.user-revenue {
+	margin: 0;
+}
+
+footer {
+	background-color: #f9f8f3;
+	padding: 1em 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: #6B7280;
+}
+
+.footer-bold-text {
+	color: black;
+}
+
+
+@media(min-width: 600px) {
+
+	.header-container {
+		margin-bottom: 3em; 
+	}
+
+
+	.container-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.no-display {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	ul {
+		display: flex;
+		align-items: center;
+	}
+
+	.header-nav-link {
+		margin-left: 1em;
+	}
+
+
+	#hamburger {
+		display: none;
+	}
+
+	button {
+		width: auto;
+	} 
+
+	header a {
+		text-decoration: none;
+	}
+
+
+	.stars-reviews-container {
+		display: flex;
+	}
+
+	.stars-flex {
+		display: flex;
+		align-items: center;
+	}
+
+
+	.site-info-container {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#hero-image{
+		order: 1;
+		width: 50%;
+	}
+
+	.button-examples-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.view-examples-text {
+		margin-left: 1em;
+	}
+
+	.checkmark-container {
+		display: inline-flex;
+	}
+
+	.product-features-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.product-features {
+		width: 30%;
+	}
+
+	.secondary-info-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#page-up-image {
+		width: 55%;
+	}
+
+	.selling-point-text-container {
+		width: 40%;
+	}
+
+	.user-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.user-info-container {
+		width: 25%;
+	}
+
+	.user-info-container button {
+		width: 100%; /** button width in user info container set to 100%
+		                             to override the auto value that comes into play when media query kicks in **/
+	}
+
+
+	footer ul {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0;
+	}
+
+	footer li {
+		margin: 0.2em 0;
+
+	}
+
+	.footer-text-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-link-container {
+		width: 20%;
+		margin: 0 1em;
+
+	}
+
+}
+
+/** index page styles end here **/
+
+/** sign up page specific styles start here **/
+
+
+#templates-section {
+	display: none;
+}
+
+#sign-up-section {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+form {
+	margin: 2em 0;
+}
+
+
+input {
+	display: block;
+	border: 2px solid #f8f8f8;
+	border-radius: 5px;
+	width: 100%;
+	margin: 0.5em 0 2.5em 0;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+
+#terms-and-conditions {
+	display: inline;
+	width: auto;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+label a {
+	text-decoration: underline;
+}
+
+
+#center-text{
+	text-align: center;
+}
+
+@media(min-width: 600px) {
+
+	#templates-section {
+		display: block;
+		background-color: #4D13D1;
+	    color: #fff;
+	    text-align: center;
+	}
+
+	#sign-up-templates-container {
+		display: flex;
+	}
+
+
+	#sign-up-section,
+	#templates-section {
+		width: 50vw;
+		min-height: 100vh;
+	}
+
+	#sign-up-subsection,
+	#templates-subsection {
+		width: 75%;
+		margin: 0 auto; 
+	}
+
+	#templates-subsection {
+		margin: 5em auto;
+	}
+
+
+	.create-account-button {
+		width: 100%;
+	}
+}

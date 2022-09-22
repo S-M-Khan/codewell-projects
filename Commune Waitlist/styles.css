@@ -1,0 +1,209 @@
+
+body {
+	/**border: 1px solid red; **/
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: #F6F9FE;
+	color: #372865;
+	margin: 0;
+}
+
+
+#header-contents-container, 
+#main-page-contents-container,
+#footer-contents-container {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#main-page-contents-container {
+	/**border: 1px solid green; **/
+	margin: 4em auto;
+	text-align: center;
+}
+
+
+header {
+	/**border: 1px solid green; **/
+	margin: 2em 0;
+}
+
+
+#site-logo {
+	display: block;
+}
+
+
+
+#header-contents-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	/**border: 1px solid magenta; **/
+	display: none;
+}
+
+ul {
+	/**border: 1px solid yellow;  **/
+}
+
+
+li {
+	/**border: 1px solid brown; **/
+}
+
+
+a {
+	/**border: 1px solid black; **/
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+button {
+	font-weight: 700;
+	background-color: #372865;
+	padding: 0.5em;
+	color: white;
+	border: 0;
+}
+
+
+#new-information-button {
+	background-color: #372865;
+	color: grey;
+	border-radius: 25px;
+	font-weight: 300;
+	border: 0;
+}
+
+
+div {
+	/**border: 1px solid black; **/
+}
+
+form {
+	/**border: 1px solid orange; **/
+}
+
+
+label {
+	/**border: 1px solid blue; **/
+	text-align: center;
+	/**display: block; **/
+}
+
+
+input {
+	/**display: block; **/
+	width: 100%;
+	box-sizing: border-box;
+	border: 0;
+	padding: 1em;
+	border-radius: 3px;
+}
+
+
+#waitlist-button {
+	width: 100%;
+	padding: 1em;
+	margin: 1em 0;
+	border-radius: 3px;
+}
+
+
+img {
+	/**border: 1px solid orange; **/
+	display: none;
+}
+
+
+footer p {
+	font-weight: 700;
+	margin-top: 2em;
+}
+
+
+@media(min-width: 525px) {
+
+	form {
+		display: flex;
+		justify-content: center;
+
+	}
+
+
+	label {
+		width: 65%;
+	}
+
+	#waitlist-button {
+		width: 30%;
+		margin: 0 1em;
+	}
+
+}
+
+
+@media(min-width: 725px) {
+
+	nav {
+		display: block;
+	}
+
+	ul {
+		padding: 0;
+		display: flex;
+		align-items: center;
+	}
+
+
+	li {
+		list-style-type: none;
+		margin-left: 1em;
+	}
+
+
+	a {
+		font-size: 0.85rem;
+	}
+
+
+	#hamburger-menu {
+		display: none;
+	}
+
+
+	#main-page-contents-container {
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	#main-page-information {
+		width: 65%;
+	}
+
+	img {
+		display: block;
+		width: 30%;
+	}
+
+
+	form {
+		justify-content: left;
+	}
+
+
+	#nav-waitlist-button {
+		margin: 0;
+		width: auto;
+		padding: 1em;
+		border-radius: 3px;
+	}
+}

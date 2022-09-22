@@ -1,6 +1,5 @@
 
 body {
-	border: 1px solid blue;
 	margin: 0;
 	text-align: center;
 	font-family: Poppins,sans-serif;
@@ -19,7 +18,7 @@ body {
 }
 
 #background-image-container {
-	background-image: url("../images/background.png");
+	background-image: url("../images/Background.png");
 	padding: 0 1em;
 }
 
@@ -31,30 +30,14 @@ body {
 	padding: 2em 0;
 }
 
-
-header {
-	/**border: 1px solid red; **/
-}
-
 nav {
-	/**border: 1px solid orange; **/
 	display: none;
 }
 
-ul {
-	/**border: 1px solid brown; **/
-}
-
-li {
-	/**border: 1px solid pink; **/
-}
-
 a {
-	/**border: 1px solid black; **/
 	text-decoration: none;
 	color: grey;
 	margin-right: 1em;
-	/**margin-left: 1em; **/
 }
 
 
@@ -80,15 +63,10 @@ span {
 	color: grey;
 }
 
-div {
-	/**border: 1px solid black; **/
-
-}
-
 img {
 	display: block;
 	max-width: 100%;
-    margin-top: 5em;
+        margin-top: 5em;
 }
 
 
@@ -97,12 +75,9 @@ img {
 	margin: 2em 0;
 }
 
-
 svg {
-	/**border: 1px solid grey; **/
 	display: block;
 }
-
 
 footer {
 	text-align: left;
